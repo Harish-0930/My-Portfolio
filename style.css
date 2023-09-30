@@ -167,7 +167,7 @@ nav ul li a:hover:after{
     font-size: 20px;
 }
 .about-content{
-    max-width: 50%;
+    width: 50%;
 }
 .about-container{
     display: flex;
@@ -553,5 +553,38 @@ textarea{
     nav ul li a{
         font-size: 16px;
     }
+
+}
+@media only screen and (max-width: 400px){
+    .about{
+        padding-top:250px;
+        width:100%;
+        height: auto;
+        display: block;
+    }
+    .about-content ul li{
+        list-style-type: disc;
+        margin-top:5px;
+        line-height: 28px;
+        font-size: 20px;
+    }
+    .about-container{
+        width:100vw;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .about-heading{
+        color:#ff004f;
+        font-size: 2.5em;
+    }
+    .about-me-pic{
+        display: none;
+    }
+    .about-me-pic img{
+        width:100%;
+        transform: translateY(-130px);
+    }
+    
 
 }
