@@ -555,32 +555,98 @@ textarea{
     }
 
 }
-@media only screen and (max-width: 180px){
+/*-----------------------------------break point 3------------------------------------*/
+@media only screen and (max-width: 400px){
+    .home{
+        width:200vw;
+        height: auto;
+        position: relative;
+    }
+    .toggle-button{
+        display: flex;
+        top:25px;
+        z-index: 1;
+        transition: 0.5s;
+        cursor: pointer;
+}
+    .sidemenu{
+        position:absolute;
+        display: none;
+        width:100%;
+        flex-direction: column;
+        gap: 10px;
+        top:0;
+        left:0;
+        background-color: #444444;
+    }
+    .active{
+        display:flex;
+        transition: 0.5s ease;
+    }
+    /*------------------------------about---------------------------------------------*/
     .about{
         padding-top:250px;
-        width:100%;
+        width:200vw;
         height: auto;
         display: block;
     }
     .about-content ul li{
+        width:200vw;
         list-style-type: disc;
         margin-top:5px;
         line-height: 28px;
         font-size: 20px;
     }
-    .about-container{
-        width:100vw;
-    }
     .about-content{
         width: 100%;
-    }
-    .about-heading{
-        color:#ff004f;
-        font-size: 2.5em;
     }
     .about-me-pic{
         display: none;
     }
-    
+    /*----------education and internship----------------*/
+.education-and-internship{
+    width:200vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 200px;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------projects----------------------------------*/
+.projects-session{
+    width:200vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2em;
+    padding-top: 100px;
+}
+.cards{  
+    width:200vw;
+    height:auto;
+    border:2px solid #f4f4f4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    cursor:pointer;
+}
 
+/*-----------contactUs------------------------*/
+.contact-me{
+    width:100%;
+    height:auto;
+}
+.contact-container{
+    width:200vw;
+    margin:auto;
+    height:auto;
+    padding-top:120px;
+}
 }
