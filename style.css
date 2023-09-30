@@ -157,7 +157,7 @@ nav ul li a:hover:after{
     padding-left: 50px;
     padding-right: 30px;
     width:100%;
-    height: 100vh;
+    height: auto;
     display: block;
 }
 .about-content ul li{
