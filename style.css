@@ -581,10 +581,6 @@ textarea{
     .about-me-pic{
         display: none;
     }
-    .about-me-pic img{
-        width:100%;
-        transform: translateY(-130px);
-    }
     
 
 }
