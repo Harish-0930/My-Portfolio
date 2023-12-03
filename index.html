@@ -218,12 +218,12 @@
                 <div class="contact">    
                     <div class="box form">
                         <h3>Send a message</h3> 
-                        <form action="https://formsubmit.co/harishmunagala42@gmail.com" method="POST">
+                        <form>
                             <div class="form-box1">
                                 <div class="form-box2">
                                     <div class="inputbox">
                                         <span>First Name</span>
-                                        <input type="text" placeholder="joe" name="Name">
+                                        <input type="text" placeholder="joe" name="Name" required>
                                     </div>
                                     <div class="inputbox">
                                         <span>Last Name</span>
@@ -233,18 +233,18 @@
                                 <div class="form-box2">
                                     <div class="inputbox">
                                         <span>Email</span>
-                                        <input type="text" placeholder="joedon@gmail.com" id="email" name="Email">
+                                        <input type="text" placeholder="joedon@gmail.com" id="email" name="Email" required>
                                     </div>
                                     <div class="inputbox">
                                         <span>Moible</span>
-                                        <input type="text" placeholder="+91 9876543218">
+                                        <input type="text" placeholder="+91 9875643514" required>
                                     </div>
                                 </div>
                                 <div class="inputbox">
                                     <span>Message</span>
-                                    <textarea placeholder="Enter your message here"></textarea>
+                                    <textarea placeholder="Enter your message here" required></textarea>
                                 </div>
-                                <button type="submit" class="Send-button">Send</button>
+                                <button type="submit" class="Send-button" onclick="showMessage()">Send</button>
                             </div>
                         </form>    
                     </div>
@@ -313,6 +313,9 @@
         navLinks.addEventListener("click",()=>{
             navmenu.classList.remove("active");
         })
+        function showMessage(){
+            alert("Thanks for filling the form it is a static website");
+        }
     </script>
 </body>
 </html>
